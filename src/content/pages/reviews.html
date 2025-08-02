@@ -1,0 +1,109 @@
+---
+title: "Reviews | Code Stitch Web Designs"
+description: "Meta description for the page"
+permalink: "/reviews/"
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                   Banner                     -->
+    <!-- ============================================ -->
+
+    <div id="banner-310">
+        <div class="cs-container">
+            <span class="cs-int-title">Reviews</span>
+            <div class="cs-breadcrumbs">
+                <a href="/" class="cs-link">Home</a>
+                <a href="/reviews/" class="cs-link cs-active">Reviews</a>
+            </div>
+        </div>
+        <!--Background Image-->
+        <picture class="cs-background">
+            <!--Mobile Image-->
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 640, height: 600 }) | avif %}" type="image/avif">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 640, height: 600 }) | webp %}" type="image/webp">
+            <source media="(max-width: 600px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 640, height: 600 }) | jpeg %}" type="image/jpeg">
+            <!--Tablet Image-->
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2048, height: 942 }) | avif %}" type="image/avif">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2048, height: 942 }) | webp %}" type="image/webp">
+            <source media="(max-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2048, height: 942 }) | jpeg %}" type="image/jpeg">
+            <!--Desktop Image-->
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2500, height: 628 }) | avif %}" type="image/avif">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2500, height: 628 }) | webp %}" type="image/webp">
+            <source media="(min-width: 1024px)" srcset="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2500, height: 628 }) | jpeg %}" type="image/jpeg">
+            <img src="{% getUrl "/assets/images/cabinets.png" | resize({ width: 2500, height: 628 }) | jpeg %}" alt="library" width="1920" height="482" loading="eager" decoding="async">
+        </picture>
+    </div>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+  <section id="reviews-67">
+  <div class="cs-container">
+    <div class="cs-content">
+      <span class="cs-topper">Our Reviews</span>
+      <h2 class="cs-title">Hear From Our Investors</h2>
+      <p class="cs-text">
+        With over $10 million in real estate transactions and years of experience flipping and building properties in Michigan, we’ve earned the trust of our investors by consistently delivering strong returns, high-quality results, and transparent communication.
+      </p>
+    </div>
+    <ul class="cs-card-group">
+      <!-- Review 1 -->
+      <li class="cs-item">
+        <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/review/r6.png" alt="profile picture" width="80" height="80">
+        <p class="cs-item-text">
+          Infinity Investment Property Solutions has been my go-to for real estate investing. Their knowledge of the local market and access to off-market deals gave me an edge. I’ve now partnered on two projects and received detailed updates throughout. The returns exceeded my expectations.
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Amanda J.</span>
+            <span class="cs-desc">Private Investor</span>
+          </div>
+          <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+        </div>
+      </li>
+      <!-- Review 2 -->
+      <li class="cs-item">
+        <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/review/r4.jpg" alt="profile picture" width="80" height="80">
+        <p class="cs-item-text">
+          As someone new to investing, I appreciated how clearly everything was explained. I got direct access to the owner, which really stood out. They shared regular videos of the flip I invested in, and I felt involved the whole way through. Super professional and trustworthy.
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Ethan R.</span>
+            <span class="cs-desc">First-Time Investor</span>
+          </div>
+          <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+        </div>
+      </li>
+      <!-- Review 3 -->
+      <li class="cs-item">
+        <img class="cs-item-img" aria-hidden="true" loading="lazy" decoding="async" src="/assets/images/review/r5.png" alt="profile picture" width="80" height="80">
+        <p class="cs-item-text">
+          What I love most is their local expertise. You can tell they’ve lived here a long time and understand the trends. They’ve built a great network of contractors and agents, and the project I invested in closed on time and on budget. Couldn’t be happier!
+        </p>
+        <div class="cs-info">
+          <div class="cs-flex-group">
+            <span class="cs-name">Carlos M.</span>
+            <span class="cs-desc">Repeat Investor</span>
+          </div>
+          <img class="cs-item-stars" aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="96" height="16">
+        </div>
+      </li>
+    </ul>
+    <a href="/contact/" class="cs-button-solid">Get in Touch</a>
+  </div>
+</section>
+
+
+    {% include 'sections/cta.html' %}
+
+{% endblock %}
