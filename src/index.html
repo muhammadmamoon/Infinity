@@ -55,29 +55,29 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
   <picture class="cs-background">
     <!--Mobile Image-->
     <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 640, height: 1490 }) | avif
-    %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 640, height: 1490 }) | webp
-    %}" type="image/webp"> <source media="(max-width: 600px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 640, height: 1490 }) | jpeg
-    %}" type="image/jpeg">
+    "/assets/images/newlanding.png" | resize({ width: 640, height: 1490 }) |
+    avif %}" type="image/avif"> <source media="(max-width: 600px)" srcset="{%
+    getUrl "/assets/images/newlanding.png" | resize({ width: 640, height: 1490
+    }) | webp %}" type="image/webp"> <source media="(max-width: 600px)"
+    srcset="{% getUrl "/assets/images/newlanding.png" | resize({ width: 640,
+    height: 1490 }) | jpeg %}" type="image/jpeg">
     <!--Tablet Image-->
     <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) | avif
-    %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) | webp
-    %}" type="image/webp"> <source media="(max-width: 1024px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg
-    %}" type="image/jpeg">
+    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) |
+    avif %}" type="image/avif"> <source media="(max-width: 1024px)" srcset="{%
+    getUrl "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922
+    }) | webp %}" type="image/webp"> <source media="(max-width: 1024px)"
+    srcset="{% getUrl "/assets/images/newlanding.png" | resize({ width: 2048,
+    height: 1922 }) | jpeg %}" type="image/jpeg">
     <!--Large Tablet Image-->
     <source media="(min-width: 1024px) and (max-width: 1300px)" srcset="{%
-    getUrl "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 })
-    | avif %}" type="image/avif"> <source media="(min-width: 1024px) and
+    getUrl "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922
+    }) | avif %}" type="image/avif"> <source media="(min-width: 1024px) and
     (max-width: 1300px)" srcset="{% getUrl "/assets/images/newlanding.png" |
     resize({ width: 2048, height: 1922 }) | webp %}" type="image/webp"> <source
     media="(min-width: 1024px) and (max-width: 1300px)" srcset="{% getUrl
-    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) | jpeg
-    %}" type="image/jpeg">
+    "/assets/images/newlanding.png" | resize({ width: 2048, height: 1922 }) |
+    jpeg %}" type="image/jpeg">
     <!--Desktop Image-->
     <source media="(min-width: 1300px)" srcset="{% getUrl
     "/assets/images/newlanding.png" | resize({ width: 1, height: 1 }) | avif %}"
@@ -410,16 +410,16 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
         <picture class="cs-picture cs-picture-1">
           <!--Mobile Image-->
           <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port2.png" | resize({ width: 182, height:
+          "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height:
           216 }) | avif %}" type="image/avif"> <source media="(max-width:
-          600px)" srcset="{% getUrl "/assets/images/portfolio/port2.png" |
+          600px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" |
           resize({ width: 182, height: 216 }) | webp %}" type="image/webp">
           <source media="(max-width: 600px)" srcset="{% getUrl
-          "/assets/images/portfolio/port2.png" | resize({ width: 182, height:
+          "/assets/images/portfolio/port2.jpg" | resize({ width: 182, height:
           216 }) | jpeg %}" type="image/jpeg">
           <!--Tablet Image-->
           <source media="(max-width: 1024px)" srcset="{% getUrl
-          "/assets/images/portfolio/port2.png" | resize({ width: 634, height:
+          "/assets/images/portfolio/port2.jpg" | resize({ width: 634, height:
           692 }) | avif %}" type="image/avif"> <source media="(max-width:
           1024px)" srcset="{% getUrl "/assets/images/portfolio/port2.jpg" |
           resize({ width: 634, height: 692 }) | webp %}" type="image/webp">
@@ -624,14 +624,20 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <span class="cs-topper">Investor Testimonials</span>
       <h2 class="cs-title">Real Results. Real Trust.</h2>
       <p class="cs-text">
-        At Infinity Investment Property Solutions LLC, we specialize in helping investors grow their wealth through reliable, local real estate opportunities. With over $10 million in successful transactions, 5+ years of hands-on experience, and a licensed builder's eye for quality, we stand out with consistent returns, transparent updates, and a personal touch.
+        At Infinity Investment Property Solutions LLC, we specialize in helping
+        investors grow their wealth through reliable, local real estate
+        opportunities. With over $10 million in successful transactions, 5+
+        years of hands-on experience, and a licensed builder's eye for quality,
+        we stand out with consistent returns, transparent updates, and a
+        personal touch.
       </p>
     </div>
     <ul class="cs-card-group">
       <!-- Review 1 -->
       <li class="cs-item">
         <img
-          class="cs-item-img rounder"
+          class="cs-item-img"
+          style="border-radius: 50%"
           aria-hidden="true"
           loading="lazy"
           decoding="async"
@@ -640,8 +646,12 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
           width="80"
           height="80"
         />
+
         <p class="cs-item-text">
-          I’ve worked with Infinity on multiple projects now, and their professionalism and results speak for themselves. From off-market deals to regular video updates, I always knew where my investment stood. They treat you like a true partner, not just another client.
+          I’ve worked with Infinity on multiple projects now, and their
+          professionalism and results speak for themselves. From off-market
+          deals to regular video updates, I always knew where my investment
+          stood. They treat you like a true partner, not just another client.
         </p>
         <div class="cs-info">
           <div class="cs-flex-group">
@@ -664,6 +674,7 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
       <li class="cs-item">
         <img
           class="cs-item-img"
+          style="border-radius: 50%"
           aria-hidden="true"
           loading="lazy"
           decoding="async"
@@ -672,8 +683,13 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
           width="80"
           height="80"
         />
+
         <p class="cs-item-text">
-          As someone new to real estate investing, I was nervous—until I connected with Infinity. They walked me through every step, and the access I had to the owner was incredible. Their knowledge of the Michigan market and strong contractor relationships gave me real peace of mind.
+          As someone new to real estate investing, I was nervous—until I
+          connected with Infinity. They walked me through every step, and the
+          access I had to the owner was incredible. Their knowledge of the
+          Michigan market and strong contractor relationships gave me real peace
+          of mind.
         </p>
         <div class="cs-info">
           <div class="cs-flex-group">
@@ -696,6 +712,5 @@ tags: "sitemap" # content/content.json will make sure that all pages in content/
     <a href="/reviews/" class="cs-button-solid">Read More Success Stories</a>
   </div>
 </section>
-
 
 {% include 'sections/cta.html' %} {% endblock %}
